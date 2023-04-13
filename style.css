@@ -1,0 +1,64 @@
+:root {
+  --background-color: rgb(7, 7, 19);
+  --border-color: rgb(255, 255, 255, 0.1);
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  background-color: var(--background-color);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(252, 240, 249);
+}
+
+nav {
+  display: flex;
+  width: 100%;
+  border-bottom: 1px solid var(--border-color);
+}
+
+nav > .nav-section {
+  padding: 2.5rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  border-left: 1px solid var(--border-color);
+}
+
+#nav-logo-section {
+  font-size: 2rem;
+  justify-content: flex-start;
+}
+
+#nav-logo-section,
+#nav-link-section {
+  flex-basis: calc(100% / 3);
+}
+
+#nav-social-section,
+#nav-contact-section {
+  flex-grow: 1;
+}
+
+#nav-link-section {
+  gap: 6rem;
+}
+
+#nav-social-section {
+  gap: 3rem;
+}
